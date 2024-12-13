@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="your-demo-video-link" target="_blank">
-      <img src="./public/banner.jpg" alt="Project Banner">
+      <img src="./public/report.jpg" alt="Project Banner">
     </a>
   
   <br />
@@ -13,10 +13,10 @@
     <img src="https://img.shields.io/badge/-Prisma-black?style=for-the-badge&logoColor=white&logo=prisma&color=2D3748" alt="prisma" />
   </div>
 
-  <h3 align="center">Anonymous Reporting System</h3>
+  <h3 align="center">Anonymous Reporting App</h3>
 
    <div align="center">
-     A secure platform for anonymous incident reporting with military-grade encryption and real-time processing
+     A secure platform for anonymous incident reporting
     </div>
 </div>
 
@@ -31,7 +31,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-This is a state-of-the-art anonymous reporting system built with Next.js 14, designed to provide a secure platform for reporting incidents while maintaining complete anonymity. The system features military-grade encryption, real-time processing, and secure two-way communication channels with law enforcement.
+This is a state-of-the-art anonymous reporting system built with Next.js 14, designed to provide a secure platform for reporting incidents while maintaining complete anonymity.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -41,29 +41,8 @@ This is a state-of-the-art anonymous reporting system built with Next.js 14, des
 - NextAuth.js for Authentication
 - Tailwind CSS
 - React Hook Form
-- Zod for Validation
-- WebSocket for Real-time Updates
+- GeminiAI
 - BCrypt for Password Encryption
-
-## <a name="features">🔋 Features</a>
-
-👉 **Military-Grade Encryption**: State-of-the-art encryption protocols to protect user identity
-
-👉 **Anonymous Reporting**: Secure submission system for incident reports
-
-👉 **Real-time Processing**: Instant verification and secure routing of all reports
-
-👉 **Secure Authentication**: Robust user authentication system using NextAuth.js
-
-👉 **Two-way Communication**: Anonymous communication channel with law enforcement
-
-👉 **User Dashboard**: Secure interface for managing and tracking reports
-
-👉 **Form Validation**: Comprehensive form handling with React Hook Form and Zod
-
-👉 **Responsive Design**: Beautiful, modern UI with Tailwind CSS
-
-👉 **Database Security**: Secure data handling with Prisma and Neon Database
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -98,15 +77,15 @@ npm run dev
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-# Authentication
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-secret-key
 
-# Database
-DATABASE_URL=your-neon-database-url
-
-# Optional Services
 NEXT_PUBLIC_MAPBOX_API_KEY=your-mapbox-key
+DATABASE_URL=postgresql:your-database-url
+NEXTAUTH_SECRET="your-secret-key"
+NEXTAUTH_URL="http://localhost:3000/api/auth"
+GEMINI_API_KEY=your-gemini-api-key
+NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=your-mapbox-access-api-key
+
+
 ```
 
 ## <a name="deployment">🚀 Deployment</a>
@@ -117,30 +96,6 @@ The application can be easily deployed on [Vercel](https://vercel.com):
 2. Connect your repository to Vercel
 3. Configure the environment variables
 4. Deploy!
-
-For optimal security:
-
-1. Enable HTTPS
-2. Configure secure headers
-3. Set up proper database access controls
-4. Regularly update dependencies
-5. Monitor system logs
-
-## 📊 Statistics
-
-- 100K+ Reports Filed
-- 100% Anonymity Rate
-- 24/7 Support Available
-- Trusted by Law Enforcement Nationwide
-
-## 🔒 Security Features
-
-- End-to-end encryption
-- Anonymous data handling
-- Secure file uploads
-- IP address protection
-- Automated data purging
-- Regular security audits
 
 ## 🤝 Contributing
 
