@@ -1,11 +1,11 @@
 "use client";
 
-interface ChannelSetupStepProps {
+interface ReportSubmittedProps {
   data: any;
   onComplete: (data: any) => void;
 }
 
-export function ChannelSetupStep({ data }: ChannelSetupStepProps) {
+export function ReportSubmitted({ data }: ReportSubmittedProps) {
   const reportId = data.reportId || "ERROR-ID-NOT-FOUND";
 
   return (

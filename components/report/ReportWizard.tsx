@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ReportForm } from "./ReportForm";
-import { ChannelSetupStep } from "./ChannelSetupStep";
+import { ReportSubmitted } from "./ReportFormCompleted";
 
 export function ReportWizard() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -22,7 +22,7 @@ export function ReportWizard() {
     <div className="rounded-2xl bg-zinc-900 p-8">
       {currentStep === 1 && <ReportForm onComplete={handleStepComplete} />}
       {currentStep === 2 && (
-        <ChannelSetupStep data={reportData} onComplete={handleStepComplete} />
+        <ReportSubmitted data={reportData} onComplete={handleStepComplete} />
       )}
     </div>
   );
